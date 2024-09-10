@@ -315,6 +315,6 @@ const Navbar = () => {
       )}
     </Nav>
   );
-};
+}
 
-export default Navbar;
+export default Navbar
