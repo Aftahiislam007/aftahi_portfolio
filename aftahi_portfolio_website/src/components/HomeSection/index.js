@@ -1,8 +1,9 @@
 import React from "react";
-// import HomeBgAnimation from '../HeroBgAnimation'
+import HomeBgAnimation from '../HomeBgAnimation'
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import HomeImg from "../../images/aftahi_pic.jpeg"
 
 export const HomeContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -29,8 +30,8 @@ export const HomeBg = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 90%;
   max-width: 1360px;
   overflow: hidden;
   padding: 0 30px;
@@ -100,6 +101,22 @@ export const Title = styled.div`
   font-weight: 700;
   font-size: 50px;
   color: ${({ theme }) => theme.text_primary};
+  line-height: 68px;
+  @media screen and (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+`;
+
+export const Name = styled.div`
+  font-weight: 700;
+  font-size: 50px;
+  color: rgb(19, 123, 160);
   line-height: 68px;
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -185,6 +202,27 @@ export const ResumeButton = styled.a`
     } 
 
 `;
+
+const Image = styled.img`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 500px;
+  border-radius: 50%;
+  border: 2px solid ${({ theme }) => theme.primary};
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
+`;
+
 const HomeSection = () => {
   const [text] = useTypewriter({
     words: Bio.roles,
@@ -196,14 +234,15 @@ const HomeSection = () => {
   return (
     <div id="about">
       <HomeContainer>
-        <HomeBg>{/* <HomeBgAnimation /> */}</HomeBg>
+        <HomeBg><HomeBgAnimation /></HomeBg>
         <HomeInnerContainer>
           <HomeLeftContainer>
             <Title>
               Hi, I'm
               <br />
-              {Bio.name}
+              
             </Title>
+            <Name>{Bio.name}</Name>
             <TextLoop>
               I am a<Span>{text}</Span>
               <Cursor
@@ -213,14 +252,15 @@ const HomeSection = () => {
               />
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="_blank">
+            <ResumeButton href={Bio.resume} target="display">
               Check Resume
             </ResumeButton>
           </HomeLeftContainer>
-          <HomeRightContainer></HomeRightContainer>
+          <HomeRightContainer>
+            <Image src={HomeImg} alt="Aftahi"/>
+          </HomeRightContainer>
         </HomeInnerContainer>
       </HomeContainer>
-      Hello
     </div>
   );
 };
