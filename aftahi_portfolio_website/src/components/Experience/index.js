@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
 import { experiences } from "../../data/constants";
-import { Timeline, TimelineConnector, TimelineDot, TimelineItem, TimelineSeparator } from '@mui/lab';
+import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@mui/lab';
+import ExperienceCard from '../Cards/ExperienceCard';
 
 const Container = styled.div`
     display: flex;
@@ -69,8 +70,8 @@ const Experience = () => {
   return (
     <Container id="experience">
         <Wrapper>
-            <Title>Experience</Title>
-            <Desc>Here are some of my professional experiences</Desc>
+            <Title>Work Experience</Title>
+            <Desc>What I Served In Company</Desc>
             <TimeLineSection>
                 <Timeline>
                     {experiences.map((experience,index)=>(
@@ -80,7 +81,9 @@ const Experience = () => {
                                 {index !== experiences.length - 1 && <TimelineConnector/>}
                                 
                             </TimelineSeparator>
-                            <TimelineConnector>Hi</TimelineConnector>
+                            <TimelineContent sx={{py: '12px', px: 2}}>
+                                <ExperienceCard experience={experience}/>
+                            </TimelineContent>
                         </TimelineItem>
                     ))}
                 </Timeline>
