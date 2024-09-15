@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import {Projects} from "../Projects/index.js"
 
 const Card = styled.div`
     width: 330px;
@@ -99,12 +100,13 @@ const Tag = styled.span`
     border-radius: 10px;
 `;
 
-const ProjectCard = ({project, setOpenModal}) => {
+const ProjectCard = ({project,setOpenModal}) => {
+    
   return (
     <Card onClick={() => setOpenModal({state: true, project: project})}>
         <Image src={project.image}/>
         <Tags>
-            {project.tags?.map((tag, ProjectDetails) => (
+            {project.tags?.map((tag, index) => (
                 <Tag key={tag}>{tag}</Tag>
             ))}
         </Tags>

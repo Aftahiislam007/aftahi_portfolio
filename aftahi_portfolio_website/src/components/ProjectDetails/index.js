@@ -181,11 +181,11 @@ const Button = styled.a`
     }
 `;
 
-
 const ProjectDetails = ({ openModal, setOpenModal }) => {
+    
     const project = openModal?.project;
-    return (
-        <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
+  return (
+    <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
             <Container>
                 <Wrapper>
                     <CloseRounded
@@ -197,16 +197,16 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+                    <Image src={project.image} />
                     <Title>{project?.title}</Title>
-                    <Date>{project.date}</Date>
+                    {/* <Date>{project.date}</Date> */}
                     <Tags>
                         {project?.tags.map((tag) => (
                             <Tag>{tag}</Tag>
                         ))}
                     </Tags>
                     <Desc>{project?.description}</Desc>
-                    {project.member && (
+                    {/* {project.member && (
                         <>
                             <Label>Members</Label>
                             <Members>
@@ -224,16 +224,16 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                                 ))}
                             </Members>
                         </>
-                    )}
+                    )} */}
                     <ButtonGroup>
                         <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        {/* <Button href={project?.webapp} target='new'>View Live App</Button> */}
                     </ButtonGroup>
                 </Wrapper>
             </Container>
 
         </Modal>
-    )
+  )
 }
 
 export default ProjectDetails
