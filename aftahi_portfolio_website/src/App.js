@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
@@ -15,6 +15,7 @@ import Footer from "./components/Footer";
 
 import StarCanvas from "./components/canvas/Stars";
 import { AnimatePresence } from "framer-motion";
+import About from "./components/About/About";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -45,7 +46,7 @@ function App() {
   console.log(openModal);
   return (
     <ThemeProvider theme={darkTheme}>
-      <Router>
+      <BrowserRouter>
         <Navbar />
         <Body>
           <StarCanvas />
@@ -53,6 +54,7 @@ function App() {
             <div>
               <HomeSection />
               <Wrapper>
+                <About />
                 <Skills />
                 <Experience />
               </Wrapper>
@@ -71,7 +73,7 @@ function App() {
             </div>
           </AnimatePresence>
         </Body>
-      </Router>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

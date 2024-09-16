@@ -1,3 +1,4 @@
+import React from "react";
 import styled from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Bio } from '../../data/constants';
@@ -8,7 +9,9 @@ const FooterContainer = styled.div`
   padding: 2rem 0;
   display: flex;
   justify-content: center;
-  //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
+  position: relative;
+  z-index: 1;
+  ${'' /* background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%); */}
 `;
 
 
@@ -29,15 +32,20 @@ const Logo = styled.h1`
   color: ${({ theme }) => theme.primary};
 `;
 
-const Nav = styled.nav`
+export const NavItems = styled.ul`
   width: 100%;
   max-width: 800px;
   margin-top: 0.5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   gap: 2rem;
-  justify-content: center;
-  @media (max-width: 768px) {
+  padding: 0 6px;
+  ${'' /* list-style: none; */}
+
+  @media screen and (max-width: 768px) {
+    ${'' /* display: none; */}
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
@@ -47,7 +55,7 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
@@ -87,19 +95,18 @@ function Footer() {
     <FooterContainer>
       <FooterWrapper>
         <Logo>Aftahi Islam</Logo>
-        <Nav>
+        <NavItems>
+          <NavLink href="#home">Home</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
           <NavLink href="#contact">Contact</NavLink>
-        </Nav>
+        </NavItems>
         <SocialMediaIcons>
-          {/* <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon> */}
-          {/* <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon> */}
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.github} target="display"><GitHub /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="_blank"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="_blank"><GitHub /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
           &copy; 2023 Aftahi Islam. All rights reserved.

@@ -270,6 +270,7 @@ const Navbar = () => {
           <MenuRounded style={{ color: "inherit" }} />
         </MobileIcon>
         <NavItems>
+          <NavLink href="#home">Home</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>

@@ -240,7 +240,7 @@ const HomeSection = () => {
     delaySpeed: 2000,
   });
   return (
-    <div id="about">
+    <div id="home">
       <HomeContainer>
         <HomeBg>
           <StarCanvas />
