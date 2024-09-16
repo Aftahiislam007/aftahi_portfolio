@@ -4,6 +4,8 @@ import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
+import { Bio } from '../../data/constants';
+import { MenuRounded } from "@mui/icons-material";
 
 export const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -19,6 +21,12 @@ export const Nav = styled.div`
     trastion: 0.8s all ease;
   }
 `;
+
+const ColorText = styled.div`
+  color: ${({ theme }) => theme.primary};
+  font-size: 32px;
+`;
+
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -36,7 +44,12 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   justify-content: start;
   align-items: center;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
+  color: inherit;
+  display: flex;
+  color: ${({ theme }) => theme.text_primary};
   @media (max-width: 640px) {
     padding: 0 0px;
   }
@@ -85,7 +98,31 @@ export const GitHubButton = styled.a`
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
   padding: 0 20px;
-  font-weight: 500;
+  font-weight: 600;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.6s ease-in-out;
+  :hover {
+    background: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+`;
+
+export const LinkedINButton = styled.a`
+  border: 1.8px solid ${({ theme }) => theme.primary};
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 70%;
+  border-radius: 20px;
+  color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+  padding: 0 20px;
+  font-weight: 600;
   text-decoration: none;
   font-size: 16px;
   transition: all 0.6s ease-in-out;
@@ -207,15 +244,14 @@ export const MobileLink = styled.a`
 `;
 
 export const MobileNavLogo = styled(LinkR)`
+  display: flex;
+  align-items: center;
   width: 80%;
   padding: 0 6px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
-  @media (max-width: 640px) {
-    padding: 0 0px;
-  }
+  color: inherit;
 `;
 
 const Navbar = () => {
@@ -225,24 +261,13 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <a
-            style={{
-              display: "flex",
-              alignItems: "center",
-              color: "white",
-              marginBottom: "20;",
-              cursor: "pointer",
-            }}
-          >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-          </a>
+          <ColorText>&lt;</ColorText>Aftahi
+          <div style={{ color: theme.primary }}>/</div>Islam
+          <ColorText>&gt;</ColorText>
         </NavLogo>
-        <MobileIcon>
-          <FaBars
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          />
+
+        <MobileIcon onClick={() => setIsOpen(!isOpen)}>
+          <MenuRounded style={{ color: "inherit" }} />
         </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
@@ -254,7 +279,8 @@ const Navbar = () => {
         </NavItems>
 
         <ButtonContainer>
-          <GitHubButton>Github Profile</GitHubButton>
+          <GitHubButton href={Bio.github} target="_blank">Github</GitHubButton>
+          <LinkedINButton href={Bio.linkedin} target="_blank">LinkedIn</LinkedINButton>
         </ButtonContainer>
       </NavbarContainer>
       {isOpen && (
@@ -306,11 +332,23 @@ const Navbar = () => {
               color: "white",
               width: "max-content",
             }}
-            href="/"
+            href={Bio.github}
             target="_blank"
           >
             Github Profile
           </GitHubButton>
+          <LinkedINButton
+            style={{
+              padding: "10px 16px",
+              background: `${theme.primary}`,
+              color: "white",
+              width: "max-content",
+            }}
+            href={Bio.linkedin}
+            target="_blank"
+          >
+            LinkedIn
+          </LinkedINButton>
         </MobileMenu>
       )}
     </Nav>

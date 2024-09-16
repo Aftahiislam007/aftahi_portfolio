@@ -7,6 +7,7 @@ import _default from '../../themes/default';
 
 export const Container = styled.div`
     background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,10 +33,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.div`
-font-size: 42px;
+font-size: 52px;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
+margin-top: 90px;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
       margin-top: 12px;

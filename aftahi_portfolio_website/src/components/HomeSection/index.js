@@ -3,7 +3,15 @@ import HomeBgAnimation from '../HomeBgAnimation'
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import HomeImg from "../../images/aftahi_pic.jpeg"
+import HomeImg from "../../images/aftahi_pic.jpeg";
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import {
+  headContainerAnimation,
+  headContentAnimation,
+  headTextAnimation,
+} from "../../utils/motion.js";
+import StarCanvas from "../canvas/Stars";
 
 export const HomeContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -30,8 +38,8 @@ export const HomeBg = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  width: 75%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   max-width: 1360px;
   overflow: hidden;
   padding: 0 30px;
@@ -207,7 +215,7 @@ const Image = styled.img`
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 400px;
+  max-width: 600px;
   max-height: 500px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
@@ -234,32 +242,49 @@ const HomeSection = () => {
   return (
     <div id="about">
       <HomeContainer>
-        <HomeBg><HomeBgAnimation /></HomeBg>
-        <HomeInnerContainer>
-          <HomeLeftContainer>
-            <Title>
-              Hi, I'm
-              <br />
-              
-            </Title>
-            <Name>{Bio.name}</Name>
-            <TextLoop>
-              I am a<Span>{text}</Span>
-              <Cursor
-                cursorColor="red"
-                cursorBlinking="false"
-                cursorStyle="|"
-              />
-            </TextLoop>
-            <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display">
-              Check Resume
-            </ResumeButton>
-          </HomeLeftContainer>
-          <HomeRightContainer>
-            <Image src={HomeImg} alt="Aftahi"/>
-          </HomeRightContainer>
-        </HomeInnerContainer>
+        <HomeBg>
+          <StarCanvas />
+          <HomeBgAnimation />
+        </HomeBg>
+
+        <motion.div {...headContainerAnimation}>
+          <HomeInnerContainer>
+            <HomeLeftContainer>
+              <motion.div {...headTextAnimation}>
+                <Title>
+                  Hi, I'm
+                  <br />
+                  
+                </Title>
+                <Name>{Bio.name}</Name>
+                <TextLoop>
+                  I am a<Span>{text}</Span>
+                  <Cursor
+                    cursorColor="red"
+                    cursorBlinking="false"
+                    cursorStyle="|"
+                  />
+                </TextLoop>
+              </motion.div>
+
+              <motion.div {...headContentAnimation}>
+                <SubTitle>{Bio.description}</SubTitle>
+              </motion.div>
+                            
+              <ResumeButton href={Bio.resume} target="display">
+                Check Resume
+              </ResumeButton>
+            </HomeLeftContainer>
+            <HomeRightContainer>
+            <motion.div {...headContentAnimation}>
+                <Tilt>
+                  <Image src={HomeImg} alt="Aftahi"/>
+                </Tilt>
+              </motion.div>            
+            </HomeRightContainer>
+          </HomeInnerContainer>
+        </motion.div>
+        
       </HomeContainer>
     </div>
   );

@@ -1,50 +1,52 @@
 import React from 'react'
 import styled from "styled-components";
 import { skills } from "../../data/constants";
+import { Tilt } from "react-tilt";
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: 1;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
 `;
 
 const Wrapper = styled.div`
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-width: 100%;
-max-width: 1100px;
-gap: 12px;
-@media screen and (max-width: 960px) {
-    flex-direction: column;
-}
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+  @media screen and (max-width: 960px) {
+      flex-direction: column;
+  }
 `;
 
 export const Title = styled.div`
-font-size: 42px;
+font-size: 48px;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
+margin-top: 90px;
   color: ${({ theme }) => theme.text_primary};
   @media screen and (max-width: 768px) {
-margin-top: 12px;
-      font-size: 32px;
+    margin-top: 12px;
+    font-size: 32px;
   }
 `;
 
 export const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-    }
+  font-size: 18px;
+  text-align: center;
+  max-width: 600px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  @media screen and (max-width: 768px) {
+      font-size: 16px;
+  }
 `;
 
 const SkillsContainer = styled.div`
@@ -124,18 +126,20 @@ const Skills = () => {
         <Desc>Here are some of my skills on which I have been working on for the past 2 years.</Desc>
         <SkillsContainer>
           {skills.map((item)=>(
-            <Skill>
-              <SkillTitle>{item.title}</SkillTitle>
-              <SkillList>
-                {
-                  item.skills.map((skill)=>(
-                    <SkillItem>
-                      <SkillImage src={skill.image}/>{skill.name}
-                    </SkillItem>
-                  ))
-                }
-              </SkillList>
-            </Skill>
+            <Tilt>
+              <Skill>
+                <SkillTitle>{item.title}</SkillTitle>
+                <SkillList>
+                  {
+                    item.skills.map((skill)=>(
+                      <SkillItem>
+                        <SkillImage src={skill.image}/>{skill.name}
+                      </SkillItem>
+                    ))
+                  }
+                </SkillList>
+              </Skill>
+            </Tilt>            
           ))}
         </SkillsContainer>
       </Wrapper>
