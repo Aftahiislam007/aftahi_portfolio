@@ -7,7 +7,7 @@ import _default from '../../themes/default';
 
 export const Container = styled.div`
     background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
-    margin-top: 100px;
+    ${'' /* margin-top: 40px; */}
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,21 +15,36 @@ export const Container = styled.div`
     z-index: 1;
     align-items: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
+    ${'' /* @media screen and (max-width: 1024px) {
+    margin-top: 100px;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 80px;
+    flex-direction: column;
+  } */}
 `;
 
 export const Wrapper = styled.div`
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1350px;
+  padding: 10px 0px 100px 0;
+  gap: 12px;
+  @media screen and (max-width: 1024px) {
+    margin-top: 7rem;
     flex-direction: column;
-    width: 100%;
-    max-width: 1350px;
-    padding: 10px 0px 100px 0;
-    gap: 12px;
-    @media (max-width: 960px) {
-        flex-direction: column;
-    }
+    padding: 10px 0px 200px 0;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 5rem;
+    flex-direction: column;
+    padding: 10px 0px 170px 0;
+  }
 `;
 
 export const Title = styled.div`
@@ -49,9 +64,15 @@ export const Desc = styled.div`
     text-align: center;
     max-width: 600px;
     color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         margin-top: 12px;
         font-size: 16px;
+        max-width: 500px;
+    }
+    @media screen and (max-width: 600px) {
+        margin-top: 12px;
+        font-size: 16px;
+        max-width: 400px;
     }
 `;
 
@@ -63,9 +84,20 @@ export const ToggleGroup = styled.div`
     border-radius: 12px;
     font-weight: 500;
     margin: 22px 0px;
-    @media (max-width: 768px) {
-        font-size: 12px;
-    }
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+      margin: 22px 19px;
+
+  }
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+    margin: 18px 15px;
+   
+  }
+  @media screen and (max-width: 760px) {
+    font-size: 10px;
+    margin: 12px 10px;
+  }
 `
 
 export const ToggleButton = styled.div`

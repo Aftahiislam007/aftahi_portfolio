@@ -15,9 +15,15 @@ justify-content: right;
 position: relative;
 z-index: 1;
 align-items: center;
-@media (max-width: 960px) {
-    padding: 0px;
-}
+margin-top: 5rem;
+@media screen and (max-width: 1024px) {
+    ${'' /* margin-top: 7rem; */}
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    ${'' /* margin-top: 5rem; */}
+    flex-direction: column;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -31,8 +37,15 @@ const Wrapper = styled.div`
   max-width: 1300px;
   padding: 20px 30px 80px 0px;
   gap: 18px;
-  @media (max-width: 960px) {
-      flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    margin-top: 7rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 
@@ -67,13 +80,19 @@ const Skill = styled.div`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
-  @media screen and (max-width: 768px) {
-    max-width: 400px;
+  @media screen and (max-width: 1024px) {
+    ${'' /* max-width: 400px; */}
+    margin-left: 8%;
+    width: 95%;
     padding: 10px 36px;
+    justify-content: center;
   }
-  @media screen and (max-width: 500px) {
-    max-width: 330px;
+  @media screen and (max-width: 600px) {
+    ${'' /* max-width: 550px; */}
+    margin-left: 8%;
+    width: 95%;
     padding: 10px 36px;
+    justify-content: center;
   }
 `;
 
@@ -284,8 +303,14 @@ const Title = styled.div`
   font-weight: 600;
   margin-top: 90px;
   color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
+  @media screen and (max-width: 1024px) {
+    margin-top: 7rem;
+    flex-direction: column;
+    font-size: 32px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 5rem;
+    flex-direction: column;
     font-size: 32px;
   }
 `;

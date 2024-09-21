@@ -79,9 +79,12 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 40px 0px 80px 0px;
-  @media (max-width: 960px) {
+  padding: 40px 0px 150px 0px;
+  @media screen and (max-width: 1024px) {
       padding: 0px;
+  }
+  @media screen and (max-width: 600px) {
+      padding: 40px 0px 160px 0px;
   }
 `;
 const Wrapper = styled.div`
@@ -93,7 +96,12 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1400px;
   gap: 12px;
-  @media (max-width: 960px) {
+  @media screen and (max-width: 1024px) {
+    margin-top: 7rem;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 5rem;
     flex-direction: column;
   }
 `;

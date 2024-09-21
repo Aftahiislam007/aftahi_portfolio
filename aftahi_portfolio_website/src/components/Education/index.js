@@ -91,7 +91,12 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
-  @media (max-width: 960px) {
+  @media screen and (max-width: 1024px) {
+    margin-top: 7rem;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 5rem;
     flex-direction: column;
   }
 `;
@@ -113,8 +118,16 @@ const Desc = styled.div`
   text-align: center;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     font-size: 16px;
+    text-align: center;
+    width: 95%;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    text-align: center;
+    width: 95%;
+    ${'' /* max-width: 200px; */}
   }
 `;
 

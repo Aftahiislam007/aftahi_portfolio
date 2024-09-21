@@ -15,14 +15,19 @@ const Container = styled.div`
 const Wrapper = styled.div`
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   max-width: 1100px;
   gap: 12px;
-  @media screen and (max-width: 960px) {
-      flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    margin-top: 7rem;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 5rem;
+    flex-direction: column;
   }
 `;
 
@@ -66,13 +71,26 @@ const Skill = styled.div`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
-  @media screen and (max-width: 768px) {
-    max-width: 400px;
-    padding: 10px 36px;
+  @media screen and (max-width: 1024px) {
+    ${'' /* max-width: 425px; */}
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    justify-content: center;
   }
-  @media screen and (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+  @media screen and (max-width: 900px) {
+    ${'' /* max-width: 375px; */}
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+  @media screen and (max-width: 760px) {
+    ${'' /* max-width: 375px; */}
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    justify-content: center;
   }
 `;
 

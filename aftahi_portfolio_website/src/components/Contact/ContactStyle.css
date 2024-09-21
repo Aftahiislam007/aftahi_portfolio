@@ -12,6 +12,7 @@ form{
     gap: 12px;
 }
 
+
 form h2{
     font-size: 28px;
     margin-bottom: 6px;
@@ -71,4 +72,30 @@ form button:hover{
     transition: all 0.4s ease-in-out;
     box-shadow:  20px 20px 60px #1F2634;
     filter: brightness(1);
+}
+
+
+@media screen and (max-width: 1024px) {
+    form{
+        margin-left: 8%;
+        width: 95%;
+        justify-content: center;
+    }
+
+    form .input-box .field{
+        width: 100%;
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+    form{
+        margin-left: 8%;
+        width: 95%; 
+        justify-content: center;
+    }
+
+    form .input-box .field{
+        width: 100%;
+    }
 }

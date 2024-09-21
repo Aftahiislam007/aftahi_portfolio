@@ -20,10 +20,12 @@ export const HomeContainer = styled.div`
   position: relative;
   padding: 80px 30px;
   @media (max-width: 960px) {
-    padding: 66px 16px;
+    ${'' /* margin-top: 150px; */}
+    padding: 60px 10px;
   }
-  @media (max-width: 640) {
-    padding: 32px 16px;
+  @media (max-width: 640px) {
+    ${'' /* margin-top: 110px; */}
+    padding: 30px 10px;
   }
   z-index: 1;
 
@@ -148,6 +150,7 @@ export const TextLoop = styled.div`
     text-align: center;
   }
   @media screen and (max-width: 640px) {
+    text-align: center;
     font-size: 22px;
     line-height: 48px;
     margin-bottom: 16px;

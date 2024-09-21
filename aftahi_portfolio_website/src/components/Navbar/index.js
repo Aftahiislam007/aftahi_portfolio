@@ -287,6 +287,14 @@ const Navbar = () => {
       {isOpen && (
         <MobileMenu isOpen={isOpen}>
           <MobileLink
+            href="#home"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          >
+            Home
+          </MobileLink>
+          <MobileLink
             href="#about"
             onClick={() => {
               setIsOpen(!isOpen);
@@ -326,6 +334,14 @@ const Navbar = () => {
           >
             Education
           </MobileLink>
+          <MobileLink
+            href="#contact"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          >
+            Contact
+          </MobileLink>
           <GitHubButton
             style={{
               padding: "10px 16px",
@@ -336,7 +352,7 @@ const Navbar = () => {
             href={Bio.github}
             target="_blank"
           >
-            Github Profile
+            Github
           </GitHubButton>
           <LinkedINButton
             style={{

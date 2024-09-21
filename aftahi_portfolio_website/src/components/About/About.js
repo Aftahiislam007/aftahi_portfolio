@@ -4,14 +4,23 @@ import { Tilt } from "react-tilt";
 
 
 const Container = styled.div`
-margin-top: 100px;
-display: flex;
-flex-direction: column;
-justify-content-center;
-position: relative;
-z-index: 1;
-align-items: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  @media screen and (max-width: 1024px) {
+    
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    
+    flex-direction: column;
+  }
 `;
+
 const Wrapper = styled.div`
   position: relative;
   display: flex;
@@ -21,7 +30,12 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
-  @media (max-width: 960px) {
+  @media screen and (max-width: 1024px) {
+    margin-top: 7rem;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 5rem;
     flex-direction: column;
   }
 `;
@@ -88,6 +102,13 @@ const SkillsContainer = styled.div`
   margin-top: 30px;
   gap: 30px;
   justify-content: center;
+  ${'' /* @media screen and (max-width: 1024px) {
+    max-width: 425px;
+
+  }
+  @media screen and (max-width: 600px) {
+    max-width: 375px;
+  } */}
 `;
 
 const Skill = styled.div`
@@ -98,13 +119,26 @@ const Skill = styled.div`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
-  @media screen and (max-width: 768px) {
-    max-width: 400px;
-    padding: 10px 36px;
+  @media screen and (max-width: 1024px) {
+    ${'' /* max-width: 425px; */}
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    justify-content: center;
   }
-  @media screen and (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+  @media screen and (max-width: 900px) {
+    ${'' /* max-width: 375px; */}
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+  @media screen and (max-width: 760px) {
+    ${'' /* max-width: 375px; */}
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    justify-content: center;
   }
 `;
 
@@ -128,11 +162,11 @@ const SkillItem = styled.div`
   justify-content: center;
   width: 400px;
   gap: 8px;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 14px;
     padding: 8px 12px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     font-size: 14px;
     padding: 6px 12px;
   }
@@ -144,6 +178,19 @@ const SkillList = styled.div`
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 20px;
+  @media (max-width: 1024px) {
+    gap: 6px;
+    width: 85%;
+    ${'' /* padding: 2rem; */}
+    margin: 0 auto;
+  }
+  @media (max-width: 600px) {
+    gap: 4px;
+    width: 90%;
+    ${'' /* padding: 2rem 1rem; */}
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
 `;
 
 const About = () => {
