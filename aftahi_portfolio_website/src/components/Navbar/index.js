@@ -43,6 +43,7 @@ export const NavLogo = styled(LinkR)`
   padding: 0 6px;
   display: flex;
   justify-content: start;
+  margin-right: 20px;
   align-items: center;
   font-weight: 500;
   font-size: 18px;
@@ -100,6 +101,7 @@ export const GitHubButton = styled.a`
   padding: 0 20px;
   font-weight: 600;
   margin-right: 20px;
+  margin-left: 30px;
   text-decoration: none;
   font-size: 16px;
   transition: all 0.6s ease-in-out;
@@ -107,8 +109,20 @@ export const GitHubButton = styled.a`
     background: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
   }
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
+  @media screen and (max-width: 1024px) {
+    font-size: 15px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  @media screen and (max-width: 900px) {
+    font-size: 15px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  @media screen and (max-width: 760px) {
+    font-size: 15px;
+    margin-right: 0;
+    margin-left: 0;
   }
 `;
 
@@ -273,6 +287,7 @@ const Navbar = () => {
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#certificates">Certificates</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
@@ -309,6 +324,14 @@ const Navbar = () => {
             }}
           >
             Skills
+          </MobileLink>
+          <MobileLink
+            href="#certificates"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          >
+            Certificates
           </MobileLink>
           <MobileLink
             href="#experience"

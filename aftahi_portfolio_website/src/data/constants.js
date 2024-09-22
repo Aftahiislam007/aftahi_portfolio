@@ -411,6 +411,29 @@ export const Bio = {
   ];
   
 
+  export const certificates = [
+    {
+      id: 0,
+      title: "Python (Kaggle's 30 Days ML Program)",
+      drive_pic: "https://drive.google.com/file/d/19SA8iUD1EVLlYFWz_NxzaKbmyt0RdNfJ/view",
+    },
+    {
+      id: 1,
+      title: "Intro to Machine Learning (Kaggle’s 30 Days ML Program)",
+      drive_pic: "https://drive.google.com/file/d/1H5ETl8KAKKv6CKAEcd4LXWhc7X3_gGt5/view",
+    },
+    {
+      id: 2,
+      title: "Data Science Certificate Program (OSTAD)",
+      drive_pic: "https://drive.google.com/file/d/1j2KMsOYsjyc3zlnBsneljbqcpQXZNBP2/view",
+    },
+    {
+      id: 3,
+      title: "Learn JavaScript (CodeChef)",
+      drive_pic: "https://drive.google.com/file/d/1nQdLeF3hJarWUgx7CvLkX1doyRxoFRcG/view",
+    },
+  ];
+
   export const TimeLineData = [
     { year: 2017, text: "Started my journey" },
     { year: 2018, text: "Worked as a freelance developer" },

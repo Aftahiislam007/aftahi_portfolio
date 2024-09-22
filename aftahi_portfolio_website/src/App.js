@@ -5,6 +5,7 @@ import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import Skills from "./components/Skills";
+import Certificates from "./components/Certificates";
 import Education from "./components/Education";
 import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import Experience from "./components/Experience";
@@ -56,6 +57,7 @@ function App() {
               <Wrapper>
                 <About />
                 <Skills />
+                <Certificates />
                 <Experience />
               </Wrapper>
               <Projects openModal={openModal} setOpenModal={setOpenModal} />

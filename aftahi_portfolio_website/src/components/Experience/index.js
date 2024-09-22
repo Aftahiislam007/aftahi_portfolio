@@ -96,6 +96,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1400px;
   gap: 12px;
+  ${'' /* margin-top: 2rem; */}
   @media screen and (max-width: 1024px) {
     margin-top: 7rem;
     flex-direction: column;
