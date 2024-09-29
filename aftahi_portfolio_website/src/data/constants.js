@@ -1,3 +1,11 @@
+import IMG1 from '../images/Mohammed Aftahi Islam - Python.png';
+import IMG2 from '../images/Mohammed Aftahi Islam - Intro to Machine Learning.png';
+import IMG3 from '../images/Mohammed Aftahi Islam-Data Science 21-C5030-1.png';
+import IMG4 from '../images/aftahiislam007-Learn JavaScript-1.png';
+import BookListTestingIMG from '../images/Book List Test.png';
+import DailyTaskAppIMG from '../images/daily-task_app.png';
+import PortfolioWebsiteIMG from '../images/Portfolio Website.png';
+
 export const Bio = {
     name: "Mohammed Aftahi Islam",
     roles: [
@@ -133,6 +141,32 @@ export const Bio = {
           name: "Matplotlib",
           image:
             "https://media.licdn.com/dms/image/D4D12AQFq38cGkv_oHQ/article-cover_image-shrink_600_2000/0/1679493396295?e=2147483647&v=beta&t=VbHivrsD3KbirknCmH5nq0TIEZxtIi7u2PuZXXiOYow",
+        },
+        
+      ],
+    },
+    {
+      title: "Software Testing",
+      skills: [
+        {
+          name: "Manual Testing",
+          image:
+            "https://img.lovepik.com/element/45010/2194.png_860.png",
+        },
+        {
+          name: "Selenium",
+          image:
+            "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
+        },
+        {
+          name: "Cypress",
+          image:
+            "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/3/cypress-icon-moigrz5nimpd7rsob0bisu.png/cypress-icon-pg9bdlubveoefqouilbg.png?_a=DAJFJtWIZAAC",
+        },
+        {
+          name: "JMeter",
+          image:
+            "https://i0.wp.com/blog.nashtechglobal.com/wp-content/uploads/2024/01/imagejmeter.jpeg?fit=1600%2C900&ssl=1",
         },
         
       ],
@@ -275,8 +309,7 @@ export const Bio = {
       // date: "Oct 2022 - Present",
       description:
         "A to-do list app for daily work activities. Here, a person can see the task lists, able to creating, deleting and also edit a task and also can track a task which is done or not. ",
-      image:
-        "https://i.ytimg.com/vi/11_1b2b09EA/maxresdefault.jpg",
+      image: DailyTaskAppIMG,
       tags: [
         "HTML",
         "CSS",
@@ -401,12 +434,23 @@ export const Bio = {
       // date: "Jan 2021",
       description:
         "A personal portfolio app of Aftahi Islam.",
-      image:
-        "src\images\aftahi_portfolio_pic.png",
+      image: PortfolioWebsiteIMG,
       tags: ["React JS", "HTML", "CSS", "JavaScript", "Bootstrap"],
       category: "web app",
       github: "https://github.com/Aftahiislam007/aftahi_portfolio",
       // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    },
+    {
+      id: 11,
+      title: "BOOK LIST TESTING",
+      // date: "Jun 2023 - Jul 2023",
+      description:
+        "Automate the testing of various sections of Book listing website (https://books.toscrape.com).",
+      image: BookListTestingIMG,
+      tags: ["JavaScript", "Cypress", "End-to-End (E2E) Testing"],
+      category: "software testing",
+      github: "https://github.com/Aftahiislam007/BookListTesting",
+      // webapp: "https://github.com/rishavchanda/Job-finder-App",
     },
   ];
   
@@ -414,21 +458,25 @@ export const Bio = {
   export const certificates = [
     {
       id: 0,
+      img: IMG1,
       title: "Python (Kaggle's 30 Days ML Program)",
       drive_pic: "https://drive.google.com/file/d/19SA8iUD1EVLlYFWz_NxzaKbmyt0RdNfJ/view",
     },
     {
       id: 1,
+      img: IMG2,
       title: "Intro to Machine Learning (Kaggle’s 30 Days ML Program)",
       drive_pic: "https://drive.google.com/file/d/1H5ETl8KAKKv6CKAEcd4LXWhc7X3_gGt5/view",
     },
     {
       id: 2,
+      img: IMG3,
       title: "Data Science Certificate Program (OSTAD)",
       drive_pic: "https://drive.google.com/file/d/1j2KMsOYsjyc3zlnBsneljbqcpQXZNBP2/view",
     },
     {
       id: 3,
+      img: IMG4,
       title: "Learn JavaScript (CodeChef)",
       drive_pic: "https://drive.google.com/file/d/1nQdLeF3hJarWUgx7CvLkX1doyRxoFRcG/view",
     },

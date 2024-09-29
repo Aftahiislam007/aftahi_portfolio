@@ -68,11 +68,13 @@ export const Desc = styled.div`
         margin-top: 12px;
         font-size: 16px;
         max-width: 500px;
+        text-align: center;
     }
     @media screen and (max-width: 600px) {
         margin-top: 12px;
         font-size: 16px;
         max-width: 400px;
+        text-align: center;
     }
 `;
 

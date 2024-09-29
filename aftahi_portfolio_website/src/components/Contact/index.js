@@ -320,9 +320,17 @@ const Desc = styled.div`
   text-align: center;
   max-width: 600px;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin-top: 12px;
     font-size: 16px;
+    text-align: center;
+    justify-content: center;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
   }
 `;
 const ContactForm = styled.form`

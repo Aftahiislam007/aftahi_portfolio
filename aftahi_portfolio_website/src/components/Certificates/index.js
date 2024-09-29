@@ -110,7 +110,7 @@ const Button = styled.a`
 
 const Card = styled.div`
     width: 40%;
-    height: 220px;
+    height: 420px;
     margin-top: 3rem;
     background-color: ${({ theme }) => theme.card};
     ${'' /* cursor: pointer; */}
@@ -268,7 +268,7 @@ const Cerficates = () => {
         <SkillsContainer>
             {certificates.map((item)=>(
                 <Card>
-                    {/* <Image src={item.drive_pic}/> */}
+                    <Image src={item.img}/>
                     <Details>
                         <Certificates_Title>{item.title}</Certificates_Title>
                         {/* <Date>{projects.date}</Date> */}
