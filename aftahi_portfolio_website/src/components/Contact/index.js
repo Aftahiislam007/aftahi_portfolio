@@ -262,11 +262,21 @@ export const ResumeButton = styled.a`
     filter: brightness(1);
     }    
     
-    
-    @media (max-width: 640px) {
+    @media screen and (max-width: 1024px) {
         padding: 12px 0;
         font-size: 18px;
+        width: 95%;
     } 
+    @media screen and (max-width: 900px) {
+        padding: 12px 0;
+        font-size: 18px;
+        width: 95%;
+    }
+    @media screen and (max-width: 760px) {
+        padding: 12px 0;
+        font-size: 18px;
+        width: 95%;
+    }  
 
 `;
 
@@ -325,12 +335,14 @@ const Desc = styled.div`
     font-size: 16px;
     text-align: center;
     justify-content: center;
+    width: 95%;
   }
   @media screen and (max-width: 600px) {
     margin-top: 10px;
     font-size: 16px;
     text-align: center;
     justify-content: center;
+    width: 95%;
   }
 `;
 const ContactForm = styled.form`

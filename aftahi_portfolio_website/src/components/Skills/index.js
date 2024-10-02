@@ -52,10 +52,17 @@ export const Desc = styled.div`
   @media screen and (max-width: 1024px) {
       font-size: 16px;
       text-align: center;
+      width: 95%;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
       font-size: 16px;
       text-align: center;
+      width: 95%;
+  }
+  @media screen and (max-width: 760px) {
+      font-size: 16px;
+      text-align: center;
+      width: 95%;
   }
 `;
 

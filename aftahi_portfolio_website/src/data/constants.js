@@ -172,6 +172,22 @@ export const Bio = {
         
       ],
     },
+    {
+      title: "Project Management Tools",
+      skills: [
+        {
+          name: "Trello",
+          image:
+            "https://i.pcmag.com/imagery/reviews/04C2m2ye5UfXyb5x5WWIsZ4-19.fit_lim.size_1050x591.v1625759628.png",
+        },
+        {
+          name: "Jira",
+          image:
+            "https://techblog.recruit.co.jp/assets/rls/thumbnail/2022-12-06-jira-automation.jpg",
+        },
+        
+      ],
+    },
   ];
   
   export const experiences = [
@@ -450,6 +466,18 @@ export const Bio = {
       tags: ["JavaScript", "Cypress", "End-to-End (E2E) Testing"],
       category: "software testing",
       github: "https://github.com/Aftahiislam007/BookListTesting",
+      // webapp: "https://github.com/rishavchanda/Job-finder-App",
+    },
+    {
+      id: 12,
+      title: "BOOK LIST SCRAPPING",
+      // date: "Jun 2023 - Jul 2023",
+      description:
+        "It is a test project where the information on the book listing website (https://books.toscrape.com) is extracted using Web Scraping.",
+      image: "https://d1pnnwteuly8z3.cloudfront.net/images/4d5bf260-c3d0-4f21-b718-8ede8d4ca716/febf9de6-8a5a-4055-b274-e685485496f5.jpeg",
+      tags: ["Node JS", "Cheerio & Axios", "Web Scraping"],
+      category: "software testing",
+      github: "https://github.com/Aftahiislam007/BookDataScrapping",
       // webapp: "https://github.com/rishavchanda/Job-finder-App",
     },
   ];

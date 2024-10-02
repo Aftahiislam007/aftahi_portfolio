@@ -69,12 +69,14 @@ export const Desc = styled.div`
         font-size: 16px;
         max-width: 500px;
         text-align: center;
+        width: 95%;
     }
     @media screen and (max-width: 600px) {
         margin-top: 12px;
         font-size: 16px;
         max-width: 400px;
         text-align: center;
+        width: 95%;
     }
 `;
 
@@ -93,7 +95,7 @@ export const ToggleGroup = styled.div`
   }
   @media screen and (max-width: 900px) {
     font-size: 12px;
-    margin: 18px 15px;
+    margin: 16px 12px;
    
   }
   @media screen and (max-width: 760px) {

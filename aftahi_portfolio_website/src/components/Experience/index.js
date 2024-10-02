@@ -124,8 +124,17 @@ const Desc = styled.div`
   text-align: center;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     font-size: 16px;
+    width: 95%;
+  }
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+    width: 95%;
+  }
+  @media screen and (max-width: 760px) {
+    font-size: 16px;
+    width: 95%;
   }
 `;
 
