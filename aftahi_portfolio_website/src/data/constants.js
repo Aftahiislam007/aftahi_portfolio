@@ -5,6 +5,7 @@ import IMG4 from '../images/aftahiislam007-Learn JavaScript-1.png';
 import BookListTestingIMG from '../images/Book List Test.png';
 import DailyTaskAppIMG from '../images/daily-task_app.png';
 import PortfolioWebsiteIMG from '../images/Portfolio Website.png';
+import MyAssetAppIMG from '../images/MyAssetPic.png';
 
 export const Bio = {
     name: "Mohammed Aftahi Islam",
@@ -296,8 +297,7 @@ export const Bio = {
       // date: "Apr 2023 - May 2023",
       description:
         "It is an Asset Management System which is used for track corporate assets handed out to employees.",
-      image:
-        "https://cdn.prod.website-files.com/60edc0a8835d5b38bf11f03f/61cf04e57e4e9122241998dc_Why-business-needs-an-Asset-Management-System.png",
+      image: MyAssetAppIMG,
       tags: ["HTML", "CSS", "Bootstrap", "Python", "Django", "SQLite"],
       category: "web app",
       github: "https://github.com/Aftahiislam007/MyAsset",
