@@ -99,6 +99,7 @@ function Footer() {
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#certificates">Certificates</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
@@ -109,7 +110,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.github} target="_blank"><GitHub /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Aftahi Islam. All rights reserved.
+          &copy; 2024 Developed by Aftahi Islam. All rights reserved.
         </Copyright>
 
       </FooterWrapper>
