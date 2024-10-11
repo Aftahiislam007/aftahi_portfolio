@@ -197,6 +197,21 @@ const Description = styled.div`
 `;
 const Span = styled.div``;
 
+const ThesisDesc = styled.div`
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  color: ${({ theme }) => theme.text_secondary};
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+    width: 100%;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+    width: 100%;
+    ${'' /* max-width: 200px; */}
+  }
+`;
 
 const EducationCard = ({education}) => {
   return (
@@ -256,8 +271,11 @@ const EducationCard = ({education}) => {
         
       </Grade>
       <Description>
-        <Span>{education.desc}</Span>
+        <Span>
+          {education.desc}
+        </Span>
       </Description>
+      <ThesisDesc>{education.thesisDesc}</ThesisDesc>
     </VerticalTimelineElement>
   )
 }

@@ -126,7 +126,7 @@ export const Bio = {
       ],
     },
     {
-      title: "Programming Language Libraries",
+      title: "Data Science / Machine Learning",
       skills: [
         {
           name: "NumPy",
@@ -143,6 +143,16 @@ export const Bio = {
           image:
             "https://media.licdn.com/dms/image/D4D12AQFq38cGkv_oHQ/article-cover_image-shrink_600_2000/0/1679493396295?e=2147483647&v=beta&t=VbHivrsD3KbirknCmH5nq0TIEZxtIi7u2PuZXXiOYow",
         },
+        {
+          name: "Scikit-Learn",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1024px-Scikit_learn_logo_small.svg.png",
+        },
+        {
+          name: "Feature Selection",
+          image:
+            "https://cdn-icons-png.flaticon.com/512/7218/7218192.png",
+        },
         
       ],
     },
@@ -153,6 +163,11 @@ export const Bio = {
           name: "Manual Testing",
           image:
             "https://img.lovepik.com/element/45010/2194.png_860.png",
+        },
+        {
+          name: "Postman (API Testing)",
+          image:
+            "https://www.svgrepo.com/show/354202/postman-icon.svg",
         },
         {
           name: "Selenium",
@@ -186,6 +201,31 @@ export const Bio = {
             "https://techblog.recruit.co.jp/assets/rls/thumbnail/2022-12-06-jira-automation.jpg",
         },
         
+      ],
+    },
+    {
+      title: "Version Control System",
+      skills: [
+        {
+          name: "Git",
+          image:
+            "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+        },
+        {
+          name: "GitHub",
+          image:
+            "https://static-00.iconduck.com/assets.00/github-icon-512x511-q5m65q8c.png",
+        },
+        {
+          name: "GitLab",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUoZqG7ZroGSAXmOxnQ4zyS4iijJRQL6kGwA&s",
+        },
+        {
+          name: "BitBucket",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0pb2gf3upIvMdEeGOw5JXQWM3mzZ_079Y-A&s",
+        },
       ],
     },
   ];
@@ -263,7 +303,8 @@ export const Bio = {
       school: "American International University Bangladesh",
       date: "April, 2017 - October, 2021",
       grade: "CGPA: 3.66",
-      // desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
+      desc: "Undergraduate Thesis : ",
+      thesisDesc: "Investigating Scaling and Feature Selection Methods for Machine Learning algorithms in Intrusion Detection System.",
       degree: "Bachelor of Science (Honours) in Computer Science and Engineering",
     },
     {
