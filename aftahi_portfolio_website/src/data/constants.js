@@ -102,7 +102,7 @@ export const skills = [
     title: "Database Management",
     skills: [
       {
-        name: "Oracle",
+        name: "Oracle SQL",
         image:
           "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/oracle-512.png",
       },
@@ -148,6 +148,18 @@ export const skills = [
         name: "Feature Selection",
         image: "https://cdn-icons-png.flaticon.com/512/7218/7218192.png",
       },
+      {
+        name: "Seaborn",
+        image: "https://cdn.worldvectorlogo.com/logos/seaborn-1.svg",
+      },
+      {
+        name: "Feature Engineering",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/009/725/030/small_2x/feature-engineering-blue-gradient-concept-icon-artificial-intelligence-problem-solving-in-machine-learning-abstract-idea-thin-line-illustration-isolated-outline-drawing-vector.jpg",
+      },
+      {
+        name: "Cross Validation",
+        image: "https://img.freepik.com/premium-vector/cross-validation-icon-vector-image-can-be-used-data-science_120816-348153.jpg",
+      },
     ],
   },
   {
@@ -179,6 +191,46 @@ export const skills = [
     ],
   },
   {
+    title: "Business Analytics",
+    skills: [
+      {
+        name: "Power BI",
+        image:
+          "https://banner2.cleanpng.com/20180708/hit/aawf0uur5.webp",
+      },
+      {
+        name: "Microsoft Visio",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLpGK8Ezvaz0O6l0txGHnCWw1hYqNa4Sr0Nw&s",
+      },
+      {
+        name: "Microsoft Excel",
+        image:
+          "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/375416i783713B05CAD4A92/image-size/original?v=v2&px=-1",
+      },
+      {
+        name: "Data Warehousing",
+        image:
+          "https://as1.ftcdn.net/v2/jpg/01/73/92/82/1000_F_173928297_iTwXWx6UiSGIx07cY3Q515jp9MTjHmSp.jpg",
+      },
+      {
+        name: "ETL Processes",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbe-YXoY6ign8nqzV_rSH3rXGh4Jhs0Te5Ug&s",
+      },
+      {
+        name: "Data Visualization",
+        image:
+          "https://cdn-icons-png.flaticon.com/512/10397/10397103.png",
+      },
+      {
+        name: "UML Diagrams",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/UML_logo.svg",
+      },
+    ],
+  },
+  {
     title: "Project Management Tools",
     skills: [
       {
@@ -190,6 +242,11 @@ export const skills = [
         name: "Jira",
         image:
           "https://techblog.recruit.co.jp/assets/rls/thumbnail/2022-12-06-jira-automation.jpg",
+      },
+      {
+        name: "ClickUp",
+        image:
+          "https://clickup.com/images/for-se-page/clickup.png",
       },
     ],
   },
