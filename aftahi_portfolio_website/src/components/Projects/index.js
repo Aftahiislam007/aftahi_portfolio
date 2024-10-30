@@ -203,6 +203,19 @@ const Projects = ({ openModal, setOpenModal }) => {
           )}
 
           <Divider />
+
+          {toggle === "console application" ? (
+            <ToggleButton active onClick={() => setToggle("business analytics")}>
+              BUSINESS ANALYTICS
+            </ToggleButton>
+          ) : (
+            <ToggleButton onClick={() => setToggle("business analytics")}>
+              BUSINESS ANALYTICS
+            </ToggleButton>
+          )}
+
+          <Divider />
+
           {toggle === "data science" ? (
             <ToggleButton active onClick={() => setToggle("data science")}>
               DATA SCIENCE
