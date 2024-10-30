@@ -91,17 +91,20 @@ export const ToggleGroup = styled.div`
     @media screen and (max-width: 1024px) {
       font-size: 12px;
       margin: 22px 19px;
+      width: auto;
 
-  }
-  @media screen and (max-width: 900px) {
-    font-size: 12px;
-    margin: 16px 12px;
-   
-  }
-  @media screen and (max-width: 760px) {
-    font-size: 10px;
-    margin: 12px 10px;
-  }
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 12px;
+      margin: 16px 12px;
+      width: auto;
+    
+    }
+    @media screen and (max-width: 760px) {
+      font-size: 8px;
+      margin: 12px 10px;
+      width: auto;
+    }
 `
 
 export const ToggleButton = styled.div`
@@ -116,9 +119,19 @@ export const ToggleButton = styled.div`
     &:hover {
         background: ${({ theme }) => theme.primary + 8};
     }
-    @media (max-width: 768px) {
-        padding: 6px 8px;
-        border-radius: 4px;
+    @media screen and (max-width: 1024px) {
+      padding: 6px 8px;
+      border-radius: 4px;
+
+    }
+    @media screen and (max-width: 900px) {
+      padding: 5px 7px;
+      border-radius: 3px;
+    
+    }
+    @media screen and (max-width: 760px) {
+      padding: 4px 6px;
+      border-radius: 2px;
     }
 `
 export const Divider = styled.div`
