@@ -82,6 +82,7 @@ const Description = styled.div`
     max-width: 100%;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    ${'' /* white-space: nowrap; */}
     text-overflow: ellipsis;
 `;
 
