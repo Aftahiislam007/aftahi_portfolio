@@ -3,6 +3,8 @@ import IMG2 from "../images/Mohammed Aftahi Islam - Intro to Machine Learning.pn
 import IMG3 from "../images/Mohammed Aftahi Islam-Data Science 21-C5030-1.png";
 import IMG4 from "../images/aftahiislam007-Learn JavaScript-1.png";
 import IMG5 from "../images/Classic Models Analysis project.png";
+import IMG6 from "../images/Customer Churn Analysis Project.png";
+import IMG7 from "../images/Kidney Disease Classification Project.png";
 import BookListTestingIMG from "../images/Book List Test.png";
 import DailyTaskAppIMG from "../images/daily-task_app.png";
 import PortfolioWebsiteIMG from "../images/Portfolio Website.png";
@@ -331,8 +333,17 @@ export const experiences = [
 export const education = [
   {
     id: 0,
+    img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Bangladesh_University_of_Professionals_%28BUP%29_Logo.svg/1200px-Bangladesh_University_of_Professionals_%28BUP%29_Logo.svg.png",
+    school: "Bangladesh University of Professionals (BUP)",
+    date: "October, 2024 - Present",
+    // grade: "CGPA: 3.66",
+    // desc: "Major : ",
+    degree: "Master of Business Administration (Professional)",
+  },
+  {
+    id: 1,
     img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/American_International_University-Bangladesh_Monogram.svg/1200px-American_International_University-Bangladesh_Monogram.svg.png",
-    school: "American International University Bangladesh",
+    school: "American International University Bangladesh (AIUB)",
     date: "April, 2017 - October, 2021",
     grade: "CGPA: 3.66",
     desc: "Undergraduate Thesis : ",
@@ -341,7 +352,7 @@ export const education = [
     degree: "Bachelor of Science (Honours) in Computer Science and Engineering",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvRLTYJyvCoMNe8PGfe49LvbGapjLXLuPAw&s",
     school: "Adamjee Cantonment College",
     date: "2016",
@@ -350,7 +361,7 @@ export const education = [
     degree: "Higher Secondary Certificate (HSC)",
   },
   {
-    id: 2,
+    id: 3,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cLTUwKjwuHhDVzm5b-Y72taKeNJfXNwIFg&s",
     school: "Adamjee Cantonment Public School",
     date: "2014",
@@ -435,6 +446,55 @@ export const projects = [
   },
   {
     id: 4,
+    title: "CUSTOMER CHURN ANALYSIS",
+    // date: "Dec 2021 - Apr 2022",
+    description:
+      "The main purpose of this analysis is to build a predictive model that identifies customers likely to churn (i.e., leave the service) based on historical data. The code focuses on analyzing customer attributes and patterns associated with churn, such as demographic information, contract details, and usage metrics, and then uses these insights to predict churn probability.",
+    image: IMG6,
+    tags: [
+      "Python",
+      "Scikit-Learn",
+      "XGBoost",
+      "Exploratory Data Analysis (EDA)",
+      "Correlation Heatmap",
+      "Feature Engineering",
+      "One-Hot Encoding",
+      "Feature Scaling",
+      "Hyperparameter Tuning with GridSearchCV",
+      "Model Evaluation",
+      "Cross-Validation",
+    ],
+    category: "data science",
+    github: "https://github.com/Aftahiislam007/Customer_Churn_Analysis",
+    // webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+  },
+  {
+    id: 5,
+    title: "KIDNEY DISEASE CLASSIFICATION",
+    // date: "Dec 2021 - Apr 2022",
+    description:
+      "The project focuses on building a Machine Learning (ML) model to classify whether a patient has chronic kidney disease (CKD) or not.",
+    image: IMG7,
+    tags: [
+      "Python",
+      "Scikit-Learn",
+      "Tensorflow",
+      "VGG16 CNN model",
+      "Keras",
+      "CategoricalCrossentropy",
+      "accuracy, F1 score metrics",
+      "Softmax activation function",
+      "MLflow",
+      "DVC (Data Version Control)",
+      "CI/CD Pipeline",
+      "AWS EC2 deployment",
+    ],
+    category: "data science",
+    github: "https://github.com/Aftahiislam007/Kidney_Disease_Classification",
+    // webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+  },
+  {
+    id: 6,
     title: "HOUSE PRICE PREDICTION",
     // date: "Dec 2021 - Apr 2022",
     description:
@@ -452,7 +512,7 @@ export const projects = [
     // webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
   },
   {
-    id: 5,
+    id: 7,
     title: "USER AUTOMATION TESTING",
     // date: "Jun 2023 - Jul 2023",
     description:
@@ -465,7 +525,7 @@ export const projects = [
     // webapp: "https://github.com/rishavchanda/Job-finder-App",
   },
   {
-    id: 6,
+    id: 8,
     title: "APARTMENT MANAGEMENT SYSTEM",
     // date: "Jul 2021",
     description:
@@ -478,7 +538,7 @@ export const projects = [
     // webapp: "https://whatsapp-clone-rishav.web.app",
   },
   {
-    id: 7,
+    id: 9,
     title: "SHOP MANAGEMENT SYSTEM",
     // date: "Jun 2021",
     description:
@@ -491,7 +551,7 @@ export const projects = [
     // webapp: "https://rishav-react-todo.netlify.app/",
   },
   {
-    id: 8,
+    id: 10,
     title: "MONEY DONATION DISTRIBUTION SYSTEM",
     // date: "Jun 2021",
     description:
@@ -504,7 +564,7 @@ export const projects = [
     // webapp: "https://breaking-bad-webapp.netlify.app",
   },
   {
-    id: 9,
+    id: 11,
     title: "PARKORI (A SMART VEHICLE PARKING MANAGEMENT SYSTEM)",
     // date: "Dec 2020 - Jan 2021",
     description:
@@ -517,7 +577,7 @@ export const projects = [
     // webapp: "https://github.com/rishavchanda/Quiz-Earn",
   },
   {
-    id: 10,
+    id: 12,
     title: "PERSONAL PORTFOLIO WEBSITE",
     // date: "Jan 2021",
     description: "A personal portfolio app of Aftahi Islam.",
@@ -528,7 +588,7 @@ export const projects = [
     // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   },
   {
-    id: 11,
+    id: 13,
     title: "BOOK LIST TESTING",
     // date: "Jun 2023 - Jul 2023",
     description:
@@ -540,7 +600,7 @@ export const projects = [
     // webapp: "https://github.com/rishavchanda/Job-finder-App",
   },
   {
-    id: 12,
+    id: 14,
     title: "BOOK LIST SCRAPPING",
     // date: "Jun 2023 - Jul 2023",
     description:
@@ -553,7 +613,7 @@ export const projects = [
     // webapp: "https://github.com/rishavchanda/Job-finder-App",
   },
   {
-    id: 13,
+    id: 15,
     title: "CLASSIC MODELS ANALYSIS",
     // date: "Jun 2023 - Jul 2023",
     description:
