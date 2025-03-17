@@ -64,6 +64,10 @@ export const skills = [
         name: "CSS",
         image: "https://cdn-icons-png.flaticon.com/512/919/919826.png",
       },
+      {
+        name: "TypeScript",
+        image: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+      },
     ],
   },
   {
@@ -97,6 +101,10 @@ export const skills = [
       {
         name: "Django",
         image: "https://www.svgrepo.com/show/353657/django-icon.svg",
+      },
+      {
+        name: "Nest JS",
+        image: "https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg",
       },
     ],
   },
@@ -289,7 +297,7 @@ export const experiences = [
       "* Developing Market Audit & Business Intelligence software using Nest JS and My SQL. ",
       "* Developing and designing database, project module and also using TypeORM for database connection.",
     ],
-    skills: ["Nest JS", "My SQL", "TypeORM", "Docker", "JWT Authentication"],
+    skills: ["TypeScript", "Nest JS", "My SQL", "TypeORM", "Docker", "JWT Authentication"],
     // doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
   },
   {
