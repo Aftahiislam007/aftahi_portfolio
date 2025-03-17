@@ -281,6 +281,19 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://www.neoscoder.com/images/logo/logo_1.png",
+    role: "Backend Developer",
+    company: "NeosCoder Ltd. (A sister concern of Akij Venture Group)",
+    date: "February 01, 2025 - Present",
+    responsibilities: [
+      "* Developing Market Audit & Business Intelligence software using Nest JS and My SQL. ",
+      "* Developing and designing database, project module and also using TypeORM for database connection.",
+    ],
+    skills: ["Nest JS", "My SQL", "TypeORM", "Docker", "JWT Authentication"],
+    // doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
+  },
+  {
+    id: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hNEPtpFOEZ7foaAGITqy02u0KI9hcNQibw&s",
     role: "Junior Software Engineer (Backend)",
     company: "Excel IT AI Ltd.",
@@ -293,7 +306,7 @@ export const experiences = [
     // doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://www.tbsnews.net/sites/default/files/styles/big_3/public/images/2021/01/11/egeneration-logo-new.png",
     role: "Trainee Software Engineer",
     company: "eGeneration PLC",
@@ -306,7 +319,7 @@ export const experiences = [
     // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   },
   {
-    id: 2,
+    id: 3,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgkGC382PXJ3TeX5hxpvknM4gYC7RBy5gq8g&s",
     role: "Software Engineer (Intern)",
     company: "Luminous Labs",
@@ -318,7 +331,7 @@ export const experiences = [
     skills: ["Laravel", "My SQL", "Microweber"],
   },
   {
-    id: 3,
+    id: 4,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdy_5LWV2qlhgYWO8612O_PE3i612DJhsLGA&s",
     role: "Software Quality Assurance Engineer (Intern) ",
     company: "Olivine Limited",
@@ -331,15 +344,15 @@ export const experiences = [
 ];
 
 export const education = [
-  {
-    id: 0,
-    img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Bangladesh_University_of_Professionals_%28BUP%29_Logo.svg/1200px-Bangladesh_University_of_Professionals_%28BUP%29_Logo.svg.png",
-    school: "Bangladesh University of Professionals (BUP)",
-    date: "October, 2024 - Present",
-    // grade: "CGPA: 3.66",
-    // desc: "Major : ",
-    degree: "Master of Business Administration (Professional)",
-  },
+  // {
+  //   id: 0,
+  //   img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Bangladesh_University_of_Professionals_%28BUP%29_Logo.svg/1200px-Bangladesh_University_of_Professionals_%28BUP%29_Logo.svg.png",
+  //   school: "Bangladesh University of Professionals (BUP)",
+  //   date: "October, 2024 - Present",
+  //   // grade: "CGPA: 3.66",
+  //   // desc: "Major : ",
+  //   degree: "Master of Business Administration (Professional)",
+  // },
   {
     id: 1,
     img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/American_International_University-Bangladesh_Monogram.svg/1200px-American_International_University-Bangladesh_Monogram.svg.png",
