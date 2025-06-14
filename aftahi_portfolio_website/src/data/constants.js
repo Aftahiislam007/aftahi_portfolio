@@ -5,6 +5,8 @@ import IMG4 from "../images/aftahiislam007-Learn JavaScript-1.png";
 import IMG5 from "../images/Classic Models Analysis project.png";
 import IMG6 from "../images/Customer Churn Analysis Project.png";
 import IMG7 from "../images/Kidney Disease Classification Project.png";
+import IMG8 from "../images/Cloud Networking.png";
+import IMG9 from "../images/IaC.jpg";
 import BookListTestingIMG from "../images/Book List Test.png";
 import DailyTaskAppIMG from "../images/daily-task_app.png";
 import PortfolioWebsiteIMG from "../images/Portfolio Website.png";
@@ -133,6 +135,74 @@ export const skills = [
     ],
   },
   {
+    title: "DevOps / Cloud Computing",
+    skills: [
+      {
+        name: "AWS Hypervisors",
+        image:
+          "https://docs.aws.amazon.com/images/whitepapers/latest/security-design-of-aws-nitro-system/images/virtualization-architecture.png",
+      },
+      {
+        name: "CI/CD Pipelines",
+        image:
+          "https://civo-com-assets.ams3.digitaloceanspaces.com/content_images/2585.blog.png?1704705311",
+      },
+      {
+        name: "AWS Containerization",
+        image: "https://www.pulumi.com/templates/container-service/aws/meta.png",
+      },
+      {
+        name: "AWS Infrastructure as Code(IaC)",
+        image:
+          IMG9,
+      },
+      {
+        name: "Amazon EC2",
+        image: "https://miro.medium.com/v2/resize:fit:740/0*9iUjIqntZZHAXfBN.png",
+      },
+      {
+        name: "Amazon S3",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpv-07PDovGyVWwK2h4cBKz9RxflQGoI1AyA&s",
+      },
+      {
+        name: "Amazon RDS",
+        image: "https://miro.medium.com/v2/resize:fit:800/1*KqNnfYtaVshGXbuGUCTOQw.png",
+      },
+      {
+        name: "AWS DynamoDB",
+        image: "https://miro.medium.com/v2/resize:fit:556/1*tTedvyOfnCu_8O26I3vlDA.png",
+      },
+      {
+        name: "Amazon VPC",
+        image: "https://miro.medium.com/v2/resize:fit:641/1*DeUfw9fuFGCpKLwZka4UHg.jpeg",
+      },
+      {
+        name: "Amazon IAM",
+        image: "https://miro.medium.com/v2/resize:fit:1280/0*g5pOOGcbNto89o-b",
+      },
+      {
+        name: "Amazon ECS/EKS",
+        image: "https://cdn.codersociety.com/uploads/aws-ecs-eks.png",
+      },
+      {
+        name: "Amazon CloudWatch",
+        image: "https://miro.medium.com/v2/resize:fit:800/1*ffbynFsxn43lPdne2kaHMQ.png",
+      },
+      {
+        name: "AWS Lambda",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/1200px-Amazon_Lambda_architecture_logo.svg.png",
+      },
+      {
+        name: "Terraform",
+        image: "https://cdn.prod.website-files.com/6340ceb04078362242dd4eb9/636131fe1f44d41e7af2eb78_terraform-logo.png",
+      },
+      {
+        name: "Kubernetes",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsh6fRo_ojjURNysq7gtmMC6vMQ2VtXwkFMQ&s",
+      },
+    ],
+  },
+  {
     title: "Data Science / Machine Learning",
     skills: [
       {
@@ -169,34 +239,6 @@ export const skills = [
       {
         name: "Cross Validation",
         image: "https://img.freepik.com/premium-vector/cross-validation-icon-vector-image-can-be-used-data-science_120816-348153.jpg",
-      },
-    ],
-  },
-  {
-    title: "Software Testing",
-    skills: [
-      {
-        name: "Manual Testing",
-        image: "https://img.lovepik.com/element/45010/2194.png_860.png",
-      },
-      {
-        name: "Postman (API Testing)",
-        image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
-      },
-      {
-        name: "Selenium",
-        image:
-          "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
-      },
-      {
-        name: "Cypress",
-        image:
-          "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/3/cypress-icon-moigrz5nimpd7rsob0bisu.png/cypress-icon-pg9bdlubveoefqouilbg.png?_a=DAJFJtWIZAAC",
-      },
-      {
-        name: "JMeter",
-        image:
-          "https://i0.wp.com/blog.nashtechglobal.com/wp-content/uploads/2024/01/imagejmeter.jpeg?fit=1600%2C900&ssl=1",
       },
     ],
   },
@@ -241,22 +283,30 @@ export const skills = [
     ],
   },
   {
-    title: "Project Management Tools",
+    title: "Software Testing",
     skills: [
       {
-        name: "Trello",
-        image:
-          "https://i.pcmag.com/imagery/reviews/04C2m2ye5UfXyb5x5WWIsZ4-19.fit_lim.size_1050x591.v1625759628.png",
+        name: "Manual Testing",
+        image: "https://img.lovepik.com/element/45010/2194.png_860.png",
       },
       {
-        name: "Jira",
-        image:
-          "https://techblog.recruit.co.jp/assets/rls/thumbnail/2022-12-06-jira-automation.jpg",
+        name: "Postman (API Testing)",
+        image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
       },
       {
-        name: "ClickUp",
+        name: "Selenium",
         image:
-          "https://clickup.com/images/for-se-page/clickup.png",
+          "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
+      },
+      {
+        name: "Cypress",
+        image:
+          "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/3/cypress-icon-moigrz5nimpd7rsob0bisu.png/cypress-icon-pg9bdlubveoefqouilbg.png?_a=DAJFJtWIZAAC",
+      },
+      {
+        name: "JMeter",
+        image:
+          "https://i0.wp.com/blog.nashtechglobal.com/wp-content/uploads/2024/01/imagejmeter.jpeg?fit=1600%2C900&ssl=1",
       },
     ],
   },
@@ -284,6 +334,27 @@ export const skills = [
       },
     ],
   },
+  {
+    title: "Project Management Tools",
+    skills: [
+      {
+        name: "Trello",
+        image:
+          "https://i.pcmag.com/imagery/reviews/04C2m2ye5UfXyb5x5WWIsZ4-19.fit_lim.size_1050x591.v1625759628.png",
+      },
+      {
+        name: "Jira",
+        image:
+          "https://techblog.recruit.co.jp/assets/rls/thumbnail/2022-12-06-jira-automation.jpg",
+      },
+      {
+        name: "ClickUp",
+        image:
+          "https://clickup.com/images/for-se-page/clickup.png",
+      },
+    ],
+  },
+  
 ];
 
 export const experiences = [
@@ -658,32 +729,40 @@ export const projects = [
 export const certificates = [
   {
     id: 0,
+    img: IMG8,
+    title: "Cloud Networking (EDGE Project)",
+    drive_pic:
+      "https://drive.google.com/file/d/1gX99CmLVw0eskD5T5GAL9Ln1FvqB84V9/view",
+  },
+  {
+    id: 1,
     img: IMG1,
     title: "Python (Kaggle's 30 Days ML Program)",
     drive_pic:
       "https://drive.google.com/file/d/19SA8iUD1EVLlYFWz_NxzaKbmyt0RdNfJ/view",
   },
   {
-    id: 1,
+    id: 2,
     img: IMG2,
     title: "Intro to Machine Learning (Kaggle’s 30 Days ML Program)",
     drive_pic:
       "https://drive.google.com/file/d/1H5ETl8KAKKv6CKAEcd4LXWhc7X3_gGt5/view",
   },
   {
-    id: 2,
+    id: 3,
     img: IMG3,
     title: "Data Science Certificate Program (OSTAD)",
     drive_pic:
       "https://drive.google.com/file/d/1j2KMsOYsjyc3zlnBsneljbqcpQXZNBP2/view",
   },
   {
-    id: 3,
+    id: 4,
     img: IMG4,
     title: "Learn JavaScript (CodeChef)",
     drive_pic:
       "https://drive.google.com/file/d/1nQdLeF3hJarWUgx7CvLkX1doyRxoFRcG/view",
   },
+  
 ];
 
 export const TimeLineData = [
