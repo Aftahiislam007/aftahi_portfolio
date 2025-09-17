@@ -100,8 +100,8 @@ export const GitHubButton = styled.a`
   cursor: pointer;
   padding: 0 20px;
   font-weight: 600;
-  margin-right: 20px;
-  margin-left: 30px;
+  margin-right: 5px;
+  margin-left: 10px;
   text-decoration: none;
   font-size: 16px;
   transition: all 0.6s ease-in-out;
@@ -135,10 +135,36 @@ export const LinkedINButton = styled.a`
   border-radius: 20px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
-  padding: 0 20px;
+  padding: 0 10px;
   font-weight: 600;
+  margin-right: 5px;
   text-decoration: none;
   font-size: 16px;
+  transition: all 0.6s ease-in-out;
+  :hover {
+    background: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+`;
+
+export const GoogleScholarButton = styled.a`
+  border: 1.8px solid ${({ theme }) => theme.primary};
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 70%;
+  border-radius: 20px;
+  color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+  padding: 0 10px;
+  font-weight: 600;
+  margin-right: 10px;
+  ${'' /* margin-left: 30px; */}
+  text-decoration: none;
+  font-size: 14px;
   transition: all 0.6s ease-in-out;
   :hover {
     background: ${({ theme }) => theme.primary};
@@ -288,6 +314,7 @@ const Navbar = () => {
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#certificates">Certificates</NavLink>
+          <NavLink href="#papers">Papers</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
@@ -297,6 +324,7 @@ const Navbar = () => {
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github</GitHubButton>
           <LinkedINButton href={Bio.linkedin} target="_blank">LinkedIn</LinkedINButton>
+          <GoogleScholarButton href={Bio.google_scholar} target="_blank">Google Scholar</GoogleScholarButton>
         </ButtonContainer>
       </NavbarContainer>
       {isOpen && (
@@ -332,6 +360,14 @@ const Navbar = () => {
             }}
           >
             Certificates
+          </MobileLink>
+          <MobileLink
+            href="#papers"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          >
+            Papers
           </MobileLink>
           <MobileLink
             href="#experience"
@@ -389,6 +425,18 @@ const Navbar = () => {
           >
             LinkedIn
           </LinkedINButton>
+          <GoogleScholarButton
+            style={{
+              padding: "10px 16px",
+              background: `${theme.primary}`,
+              color: "white",
+              width: "max-content",
+            }}
+            href={Bio.google_scholar}
+            target="_blank"
+          >
+            Google Scholar
+          </GoogleScholarButton>
         </MobileMenu>
       )}
     </Nav>

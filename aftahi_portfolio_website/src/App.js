@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
 import Skills from "./components/Skills";
 import Certificates from "./components/Certificates";
+import Papers from "./components/Papers";
 import Education from "./components/Education";
 import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import Experience from "./components/Experience";
@@ -58,6 +59,7 @@ function App() {
                 <About />
                 <Skills />
                 <Certificates />
+                <Papers />
                 <Experience />
               </Wrapper>
               <Projects openModal={openModal} setOpenModal={setOpenModal} />
