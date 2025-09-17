@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Bio } from '../../data/constants';
 import { GitHub } from '@mui/icons-material';
+import SchoolIcon from '@mui/icons-material/School';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -100,6 +101,7 @@ function Footer() {
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#certificates">Certificates</NavLink>
+          <NavLink href="#papers">Papers</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
@@ -108,6 +110,7 @@ function Footer() {
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.linkedin} target="_blank"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.github} target="_blank"><GitHub /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.google_scholar} target="_blank"><SchoolIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
           &copy; 2024 Developed by Aftahi Islam. All rights reserved.

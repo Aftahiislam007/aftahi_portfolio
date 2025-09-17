@@ -7,6 +7,8 @@ import IMG6 from "../images/Customer Churn Analysis Project.png";
 import IMG7 from "../images/Kidney Disease Classification Project.png";
 import IMG8 from "../images/Cloud Networking.png";
 import IMG9 from "../images/IaC.jpg";
+import IMG10 from "../images/conference paper-1.png";
+import IMG11 from "../images/conference paper-2.png";
 import BookListTestingIMG from "../images/Book List Test.png";
 import DailyTaskAppIMG from "../images/daily-task_app.png";
 import PortfolioWebsiteIMG from "../images/Portfolio Website.png";
@@ -21,6 +23,7 @@ export const Bio = {
   resume:
     "https://drive.google.com/drive/u/2/folders/1w442kZ0SUNgAJVJdMo_soFvV20ULib9Q",
   linkedin: "https://www.linkedin.com/in/aftahi9131b1138/",
+  google_scholar: "https://scholar.google.com/citations?hl=en&user=HB1l41YAAAAJ",
 };
 
 export const skills = [
@@ -763,6 +766,27 @@ export const certificates = [
       "https://drive.google.com/file/d/1nQdLeF3hJarWUgx7CvLkX1doyRxoFRcG/view",
   },
   
+];
+
+export const papers = [
+  {
+    id: 0,
+    img: IMG10,
+    title: "Augmented 3D U-Net Architecture for Accurate Multimodal MRI Brain Tumor Segmentation",
+    tags: ["ICADCML 2025 Conference"],
+    category: "conference paper",
+    website_link:
+      "https://link.springer.com/chapter/10.1007/978-981-96-6721-5_11",
+  },
+  {
+    id: 1,
+    img: IMG11,
+    title: "Enhanced Calorie Estimation of Solid Foods Using Federated Learning and YOLO Models: A Distributed Approach for Collaborative Caloric Data Analysis",
+    tags: ["ICADCML 2025 Conference"],
+    category: "conference paper",
+    website_link:
+      "https://link.springer.com/chapter/10.1007/978-981-96-6718-5_10",
+  },
 ];
 
 export const TimeLineData = [
